@@ -1,8 +1,8 @@
 execute as @e[tag=tw_ores,distance=..5] at @s run \
-data modify storage tw:chunk_list position.x append from entity @s Pos[0]
+data modify storage tw:data array.entry.x append from entity @s Pos[0]
 
 execute as @e[tag=tw_ores,distance=..5] at @s run \
-data modify storage tw:chunk_list position.z append from entity @s Pos[2]
+data modify storage tw:data array.entity.z append from entity @s Pos[2]
 
 
 #Say the newest saved position
