@@ -8,7 +8,7 @@ execute store result score $temp.x data run data get storage tw:data temp.x[-1]
 execute store result score $temp.z data run data get storage tw:data temp.z[-1]
 
 execute store result storage tw:data forece_load_data.x int 1 run scoreboard players get $temp.x data
-execute store result storage tw:data forece_load_data.z int 1 run scoreboard players get $temp.x data
+execute store result storage tw:data forece_load_data.z int 1 run scoreboard players get $temp.z data
 
 
 # 3. Call the function passing that compound

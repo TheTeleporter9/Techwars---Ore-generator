@@ -2,6 +2,8 @@ give @s[tag=dev] cow_spawn_egg{display:{Name:'{"text":"ore vein base","color":"d
 
 give @p creeper_spawn_egg{display:{Name:'{"text":"Save Ore Location","color":"light_purple"}',Lore:['{"text":"Place this near the Center of the ore vein, to make it regenerate","color":"yellow","italic":true}']},EntityTag:{id:"minecraft:bat",OnGround:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["tw","tw_save"]}} 1
 
+give @p strider_spawn_egg{display:{Name:'{"text":"Remove Ore Spawn","color":"red","bold":true}'},EntityTag:{id:"minecraft:bat",OnGround:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["tw","tw_remove"]}} 1
+
 #give all of the different ore veins
 give @s[tag=dev] drowned_spawn_egg{display:{Name:'{"text":"Place magnetie","color":"dark_green","bold":true}',Lore:['{"text":"put this in the center and ores will generate","color":"#C7D8FF","italic":true}']},EntityTag:{id:"minecraft:marker",Tags:["tw_ores","tw","tw_mag"]}} 1
 give @s[tag=dev] drowned_spawn_egg{display:{Name:'{"text":"Place titanium","color":"dark_green","bold":true}',Lore:['{"text":"put this in the center and ores will generate","color":"#C7D8FF","italic":true}']},EntityTag:{id:"minecraft:marker",Tags:["tw_ores","tw","tw_tit"]}} 1
