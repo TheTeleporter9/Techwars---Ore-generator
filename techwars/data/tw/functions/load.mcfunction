@@ -9,7 +9,7 @@ scoreboard objectives add tw_random dummy
 scoreboard objectives add posX dummy
 scoreboard objectives add posZ dummy
 
-data modify storage tw:data array set value {position: {x:[234d,321d],z:[321d, 123d]}}
+data modify storage tw:data position set value {x:[],z:[]}
 
 
 function tw:minute_counter
