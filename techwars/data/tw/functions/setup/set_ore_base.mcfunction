@@ -7,6 +7,7 @@ tp @e[type=bat,tag=tw_base] ~ ~-100000 ~
 kill @e[type=bat,tag=tw_base]
 
 
+
 # choose up to 3 random ore markers and place ore structures there
 # tag the selected markers so we can clear the unselected ones
 execute as @e[tag=tw_ores,sort=random,limit=3] store result score @s data run scoreboard players add @s data 1

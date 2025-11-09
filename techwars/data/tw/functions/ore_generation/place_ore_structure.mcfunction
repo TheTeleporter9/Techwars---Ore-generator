@@ -1,4 +1,3 @@
-function tw:force_load/process_force_loads
 
 execute as @e[tag=tw_mag] at @s positioned ~-3 ~ ~-4 run function tw:ore_generation/ores/tw_mag
 execute as @e[tag=tw_tit] at @s positioned ~-3 ~ ~-4 run function tw:ore_generation/ores/tw_tit
