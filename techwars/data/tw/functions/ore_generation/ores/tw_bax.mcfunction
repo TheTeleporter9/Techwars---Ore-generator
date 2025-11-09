@@ -1,7 +1,10 @@
 function tw:tw_random_1_5
-forceload add ~ ~
-scoreboard players add $loaded data 1
-execute as @a[tag=dev] run tellraw @a [{"text":"Marker ore position: "},{"color":"green","score":{"name":"@s","objective":"posX"}},{"text":", "},{"color":"green","score":{"name":"@s","objective":"posZ"}}]
+
+
+execute as @a[tag=dev] at @s run tellraw @s [{"text":"Bauxite marker position: "},\
+{"color":"green","nbt":"Pos[0]","entity":"@e[type=marker,limit=1,sort=nearest,tag=tw_ores,tag=tw_bax]"},\
+{"text":", "},\
+{"color":"green","nbt":"Pos[2]","entity":"@e[type=marker,limit=1,sort=nearest,tag=tw_ores,tag=tw_bax]"}]
 
 
 execute if score $random tw_random matches 1 run place template minecraft:bax_1
@@ -11,4 +14,4 @@ execute if score $random tw_random matches 4 run place template minecraft:bax_4
 execute if score $random tw_random matches 5 run place template minecraft:bax_5
 execute if score $random tw_random matches 6 run place template minecraft:bax_6
 
-forceload remove ~ ~
+

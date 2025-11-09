@@ -16,4 +16,4 @@ execute as @e[tag=tw_tug] at @s positioned ~-3 ~ ~-4 run function tw:ore_generat
 execute as @e[tag=tw_bax] at @s positioned ~-3 ~ ~-4 run function tw:ore_generation/ores/tw_bax
 
 scoreboard players reset @s data
-return 0
+return 1

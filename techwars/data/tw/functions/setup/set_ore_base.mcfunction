@@ -12,7 +12,7 @@ kill @e[type=bat,tag=tw_base]
 # tag the selected markers so we can clear the unselected ones
 execute as @e[tag=tw_ores,sort=random,limit=3] store result score @s data run scoreboard players add @s data 1
 # place structures at selected markers
-execute as @e[tag=tw_ores,scores={data=1..}] at @s positioned ~-3 ~ ~-4 run function tw:force_load/process_force_loads
+execute as @e[tag=tw_ores,scores={data=1..}] at @s positioned ~-3 ~ ~-4 run function tw:force_load/loop/loop_backwards_init
 # clean up unselected markers by removing them
 
 
