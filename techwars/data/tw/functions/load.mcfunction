@@ -9,6 +9,8 @@ scoreboard objectives add tw_random dummy
 scoreboard objectives add posX dummy
 scoreboard objectives add posZ dummy
 
+scoreboard players add CONST_CHUNK data 16
+
 #data modify storage tw:data position set value {x:[],z:[]}
 
 
