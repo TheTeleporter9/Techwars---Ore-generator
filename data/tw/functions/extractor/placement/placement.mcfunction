@@ -1,6 +1,7 @@
 # give @p crate:wrench
 # kill @e[type=item,nbt={Item:{id:"create:wrench"}}]
 
+# say correct
 
 execute align xyz positioned ~-0.05 ~ ~-0.05 \
 unless entity @e[type=block_display,tag=tw_extr,distance=..3,limit=1] run \
@@ -15,4 +16,5 @@ execute as @e[type=block_display,tag=tw_extr] run scoreboard players add @s data
 execute as @s at @s unless block ~ ~3 ~ air if entity @e[type=block_display,tag=tw_extr,distance=..3] run \
 place template minecraft:extractor_empty ~-1 ~3 ~-1
 
+# say placement correctly placed
 
